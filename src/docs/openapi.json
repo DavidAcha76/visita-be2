@@ -1,0 +1,15 @@
+{
+  "openapi": "3.0.3",
+  "info": { "title": "Visita Cocha API", "version": "1.0.0" },
+  "paths": {
+    "/api/pois": {
+      "get": { "summary": "Listar POIs", "responses": { "200": { "description": "OK" } } },
+      "post": { "summary": "Crear POI", "responses": { "201": { "description": "Created" } } }
+    },
+    "/api/pois/{id}": {
+      "get": { "summary": "Obtener POI", "responses": { "200": { "description": "OK" }, "404": { "description": "Not Found" } } },
+      "put": { "summary": "Actualizar POI", "responses": { "200": { "description": "OK" }, "404": { "description": "Not Found" } } },
+      "delete": { "summary": "Eliminar POI", "responses": { "204": { "description": "No Content" }, "404": { "description": "Not Found" } } }
+    }
+  }
+}
